@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+nav
+{
+	position: fixed;
+	width: 100%;
+	padding: 3px 0px;
+	background-color: rgb(241, 234, 255,0.8);
+	/*box-shadow: 0 5px 10px #ddd;*/
+	border: none;
+	z-index: 9999998
+}
+section
+{
+	min-height: 800px;
+	padding: 100px 0;
+}
+
+footer
+{
+	padding: 50px 0;
+	background-color: #6BA2FF;
+}
+ 
+nav .menu a
+{
+	text-decoration: none;
+	color: #2516D4;
+	font-weight: 800;
+	padding: 5px 30px;
+	font-size:24px;
+}
+
+nav .menu a:hover /*??? LÀM SAO CHO BORDER DƯỚI CHỮ NÓ NGẮN LẠI*/
+{
+	border-bottom: 3px solid rgba(37, 22, 212,1.00)
+}
+
+.btn-primary
+{
+	background-color: #FFF0C4;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #2769DA;
+	font-size: 20px;
+}
+
+#uudai
+{
+	background-image: url( "../img/girl.png");
+	background-repeat: no-repeat;
+	background-position: right center
+}
+
+#caidat
+{
+	background-image: url(  "../img/hand-hold-tree.svg");
+	background-repeat: no-repeat;
+	background-position: left center
+}
+.bg-dot {
+	
+}

@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap');
+body
+{
+	font-family:'Sarabun',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	background-color:#eee;
+	background-image: url("../img/Mask group.png");
+	background-repeat: no-repeat;
+	background-position: left 400px;
+	margin:0 ;
+	color: #757676
+}
+h1,h2,h3,h4 {color: #041A45}
+h1 {font-size: 64 px}
+h2 {font-size: 40 px}
+h3 {font-size: 30 px}
+h4 {font-size: 20 px}
+p { line-height: 1.5rem}
+
+*{ box-sizing: border-box} 
+.container
+{
+	width: 80%; 
+	margin: auto; 
+	
+}
+.row { display: flex; flex-wrap: wrap}
+.col-1 { width: 8.33%; }
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	/*border: 1px solid red;*/
+	padding: 15px
+}
+.bg-footer{ background-color: #ddd}
+.img-100{ width: 100%; height: auto}
+
+.text-center {text-align: center}
+.text-right {text-align: right}
+.text-left {text-align: left}
+/*-----Giong icon trong 1 row theo chieu doc (top/center/bottom)-----*/
+.align-items-top {align-items: flex-start}
+.align-items-center {align-items: center}
+.align-items-bottom {align-items: flex-end}
+/*-----Giong icon trong 1 row theo chieu ngang (left/right/justify)-----*/
+.justify-center { justify-content: center}
+.justify-left { justify-content: flex-start}
+.justify-right { justify-content: flex-end}
+.justify-between { justify-content: space-between}
+.justify-around { justify-content: space-around}
+
+
+
+
+/*-Mau-*/
+.btn-secondary
+{
+	background-color: #2769DA;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 15px;
+	border: none
+}
+
+.btn-secondary:hover{
+	background: #7AA3FF
+}
+.bg-primary{	background-color: aquamarine}
+
+
+
+
