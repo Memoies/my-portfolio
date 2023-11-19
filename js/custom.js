@@ -3,6 +3,9 @@ $('#banner').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
+    autoplay:true,
+	autoplayTimeout:5000,
+	smartSpeed:2000,
     responsive:{
         0:{
             items:1
@@ -21,6 +24,9 @@ $('#banner1').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
+    autoplay:true,
+	autoplayTimeout:5000,
+	smartSpeed:2000,
     responsive:{
         0:{
             items:1
@@ -38,6 +44,9 @@ $('#banner2').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
+    autoplay:true,
+	autoplayTimeout:5000,
+	smartSpeed:2000,
     responsive:{
         0:{
             items:1
