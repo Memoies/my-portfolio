@@ -63,7 +63,7 @@ nav
 	position: fixed;
 	width: 100%;
 	padding: 3px 0px;
-	background-color: rgb(241, 234, 255,1);
+	background-color: #E4D7FF;
 	box-shadow: 0 2px 3px #ddd;
 	border: none;
 	z-index: 9999998
@@ -207,11 +207,14 @@ nav .menu a:hover::after /*??? LÀM SAO CHO BORDER DƯỚI CHỮ NÓ NGẮN LẠ
 	font-size: 20px;
 }
 
-#uudai
+#intro
 {
-	background-image: url( "../img/girl.png");
+	height: 100vh;
+	background-image: url("../img/banner.jpg");
 	background-repeat: no-repeat;
-	background-position: right center
+	background-position: center;
+
+
 }
 
 #caidat
