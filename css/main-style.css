@@ -1,39 +1,200 @@
 @charset "utf-8";
 /* CSS Document */
+.f-nun{ font-family: 'Nunito'; }
+.f-jose{ font-family: 'Josefin Sans';}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Nunito';
+}
+
+h1{font-size: 48px}
+
+h2{
+	border-bottom: 6px solid rgba(37, 22, 212,1.00);
+	font-size: 40px
+
+}
+
+h3{font-size: 36px}
+
+/*----------------------------------------------*/
+
+.subtitle-1{
+    max-width: 750px;
+    text-align: center;
+	line-height: 2.5rem
+}
+
+.subtitle-2{
+    max-width: 750px;
+    text-align: center;
+	line-height: 0rem
+}
+
+.line-para{
+	line-height: 2rem
+}
+.para{
+	line-height: 2rem
+}
+
+.para-sp{
+	max-width: 550px;
+    justify-content: left;
+	line-height: 1.5rem;
+	font-family: 'Josefin Sans';
+	font-size: 20px
+}
+
+.skill p{
+	margin-right: 10px
+}
+
+.bor-t{
+	border-top: 3px  solid rgba(0, 0, 0,1.00)
+}
+
+.highlight {
+            color: #2516D4;
+}
+/*----------------------------------------------------*/
 nav
 {
 	position: fixed;
 	width: 100%;
 	padding: 3px 0px;
-	background-color: rgb(241, 234, 255,0.8);
-	/*box-shadow: 0 5px 10px #ddd;*/
+	background-color: rgb(241, 234, 255,1);
+	box-shadow: 0 2px 3px #ddd;
 	border: none;
 	z-index: 9999998
 }
 section
 {
 	min-height: 800px;
-	padding: 100px 0;
+	
 }
 
 footer
 {
 	padding: 50px 0;
-	background-color: #6BA2FF;
+	background-color: none;
+	
+	
 }
  
 nav .menu a
 {
+	position: relative;
+	font-family: 'Nunito';
 	text-decoration: none;
 	color: #2516D4;
 	font-weight: 800;
 	padding: 5px 30px;
-	font-size:24px;
+	font-size:20px;
+	
 }
 
-nav .menu a:hover /*??? LÀM SAO CHO BORDER DƯỚI CHỮ NÓ NGẮN LẠI*/
+nav .menu a::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: 0;
+	left: 50%;
+	background-color: #2516D4;
+	transition: width 0.3s;
+	transform: translateX(-50%);
+	
+}
+
+nav .menu a:hover::after /*??? LÀM SAO CHO BORDER DƯỚI CHỮ NÓ NGẮN LẠI*/
 {
-	border-bottom: 3px solid rgba(37, 22, 212,1.00)
+/*	border-bottom: 3px solid rgba(37, 22, 212,1.00);*/
+	
+	width: 50%;
+}
+
+/*-----------------------BOX-----------------------------*/
+
+.box-sp {
+	border-radius: 12px 0px 0px 12px ;
+	height: 534px;
+	border: none
+}
+
+.box-a {
+	border-radius: 0px 12px 12px 0px;
+	background-color: #D9D9D9;
+	color: #000000;
+	text-decoration: none;
+	border: none;
+	height: 620px;
+	
+}
+
+.box-b {
+	border-radius: 12px 0px 0px 12px;
+	background-color: #D9D9D9;
+	color: #000000;
+	text-decoration: none;
+	border: none;
+	height: 690px;
+	
+}
+
+.box-c {
+	border-radius: 0px 12px 12px 0px;
+	background-color: #D9D9D9;
+	color: #000000;
+	text-decoration: none;
+	border: none;
+	height: 760px;
+	
+}
+
+.t-box {
+	width:100%;
+	border-radius: 12px ;
+	overflow: auto;
+	resize: none;
+	border: 3px solid #2516D4;
+	background-color: #ebebeb;
+	font-size: 20px;
+	padding: 8px 15px;
+}
+
+/*_____________________Button_____________*/
+.btn-1st    
+{
+	border-radius: 12px 12px 12px 12px ;
+	background-color: #2516D4;
+	color: #fff;
+	text-decoration: none;
+	
+	padding: 8px 15px;
+	border: none
+}
+
+.btn-2st
+{
+	border-radius: 12px 12px 12px 12px ;
+	background-color: #D9D9D9;
+	color: #000000;
+	text-decoration: none;
+	
+	padding: 8px 15px;
+	border: none
+}
+
+.btn-3st
+{
+	border-radius: 12px 12px 12px 12px ;
+	background-color: #8E92EF;
+	color: #000000;
+	text-decoration: none;
+	
+	padding: 8px 15px;
+	border: none
 }
 
 .btn-primary
@@ -58,7 +219,4 @@ nav .menu a:hover /*??? LÀM SAO CHO BORDER DƯỚI CHỮ NÓ NGẮN LẠI*/
 	background-image: url(  "../img/hand-hold-tree.svg");
 	background-repeat: no-repeat;
 	background-position: left center
-}
-.bg-dot {
-	
 }
