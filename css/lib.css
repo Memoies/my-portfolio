@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Nunito:wght@700;800;900&display=swap');
+
+body
+{
+	font-family:'Nunito','Josefin Sans',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	background-color:#FFFFFF; 
+/*	background-image: url("../img/Mask group.png");*/
+	background-repeat: no-repeat;
+	background-position: left 400px;
+	margin:0 ;
+	padding: 0;
+	color: #000000;
+}
+
+/* _______________FONTS SYSTEM__________________ */
+
+.f-nun{ font-family: 'Nunito';}
+.f-jose{ font-family: 'Josefin Sans';}
+
+/* _______________GRID SYSTEM__________________ */
+
+*
+{
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+    /* border: 1px solid red;  */
+}
+
+.container
+{
+	width: 80%; 
+	margin: auto;
+}
+
+.row
+{ 
+	padding-top: 0;
+	padding-bottom: 0;
+	display: flex; 
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.col-1{ width: 8.33%}
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 0px
+}
+
+section
+{
+	min-height: 100vh;
+}
+
+/* _______________CANH LỀ__________________ */
+.text-center {text-align: center}
+.text-right {text-align: right}
+.text-left {text-align: left}
+.text-bottom {text-align: end}
+/*-----Giong icon trong 1 row theo chieu doc (top/center/bottom)-----*/
+.align-items-top {align-items: flex-start}
+.align-items-center {align-items: center}
+.align-items-bottom {align-items: flex-end}
+/*-----Giong icon trong 1 row theo chieu ngang (left/right/justify)-----*/
+.justify-center { justify-content: center}
+.justify-left { justify-content: left}
+.justify-right { justify-content: flex-end}
+.justify-between { justify-content: space-between}
+.justify-around { justify-content: space-around}
+
+
+
