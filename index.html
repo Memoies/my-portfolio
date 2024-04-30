@@ -1,323 +1,172 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Memmoies | Portfolio</title>
-    <link rel="stylesheet" href="css/lib.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-5">
-                    <div class="row align-items-center">
-                        <a href="#home" class="img-avatar"></a>
-                        <p class="text-avatar">MEMOIES</p>
-                    </div>
+            <a class="home-link" href="#home">
+                <span class="avatar"></span>
+                <span class="author">MEMOIES</span>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-link-theme-switcher">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="nav navbar-nav nav-link-gap">
+                        <li class="nav-item"><a class="link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="link" href="#projects">PROJECTS</a></li>
+                        <li class="nav-item"><a class="link" href="#contact">CONTACT</a></li>
+                    </ul>
                 </div>
-                <div class="col-7 menu text-center">
-                    <div class="row align-items-center justify-center">
-                        <a href="#gioithieu">GIỚI THIỆU</a>
-                        <a href="#sanpham">SẢN PHẨM</a>
-                        <a href="#lienhe">LIÊN HỆ</a>
+                <button class="theme-switcher">
+                    <div id="dark-theme-icon" class="theme-icon">
+                        <!-- <?xml version="1.0" encoding="utf-8"?> -->
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                fill="currentColor">
+                            </path>
+                        </svg>
                     </div>
-                </div>
+                    <div id="light-theme-icon" class="theme-icon">
+                        <!-- <?xml version="1.0" encoding="utf-8"?> -->
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                                fill="currentColor">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+                                fill="currentColor">
+                            </path>
+                        </svg>
+                    </div>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section id="home">
-        <div class="container" style="padding-top: 250px;">
-            <div class="row justify-center">
-                <p class="text-home text-center">Xin chào! Mình là Memoies</p>
-            </div>
-            <div class="row justify-center">
-                <p class="f-jose subtitle-home">
-                    Mình 
-                    <span class="highlight">hướng đến</span>
-                    sản phẩm không chỉ
-                    <span class="highlight">thân thiện</span>
-                    về trải nghiệm mà còn 
-                    <span class="highlight">ấn tượng</span>
-                    về hình ảnh.
-                </p>
-            </div>
-            <div class="row justify-center" style="padding-top: 50px;">
-                <p class="f-nun"><a href="#gioithieu" class="btn"><strong>Gặp
-                    mình nào !</strong></a></p>
-            </div>
-        </div>
-    </section>
-
-    <section id="gioithieu">
-        <div class="container" style="padding-top: 150px;">
-            <div class="row justify-around">
-				<p class="text-section">GIỚI THIỆU</p>
-			</div>
-            <div class="row justify-around">
-				<p class="f-jose subtitle-gioithieu">Mình rất vui khi bạn ghé tham quan không gian
-					của mình.</p>
-			</div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-5">
-                    <p class="f-nun" style="font-size: 36px"><strong>Về bản thân mình!</strong></p>
-                    <div class="row">
-						<p class="f-jose text-line-para" >Mình là một Graphic Designer nhiệt huyết với
-							mục tiêu tạo ra những thiết kế có ảnh hưởng lâu dài và đóng góp vào việc làm cho thế giới số
-							trở nên thú vị và hiệu quả.
-						</p>
-						<p class="f-jose text-line-para">Ngoài ra, mình có nền tảng vững chắc về kỹ
-							thuật và <br>hiểu biết sâu sắc về các thiết bị điện tử, vi xử lý, thiết bị thông minh.
-						</p>
-						<p class="f-jose text-line-para">Mình có thể sử dụng tiếng Anh thành thạo,
-							giúp giao tiếp và thuyết phục hiệu quả với đồng nghiệp và khách hàng.
-						</p>
-						<p class="f-jose text-line-para">
-							Mình rất mong muốn được hợp tác và tìm hiểu thêm về những ý tưởng mới và thú vị. Nếu bạn cảm
-							thấy mình là người phù hợp, hãy liên hệ ngay với mình nhé!
-						</p>
-						<p class="f-nun" style="font-size: 30px; line-height: 4rem"><a href="#sanpham"
-								class="btn justify-center"><strong>Sản phẩm</strong></a></p>
-					</div>
+    <main>
+        <section id="home">
+            <div class="container banner-content">
+                <div class="banner-text">
+                    <p class="banner-title">Hello, I am Memoies!</p>
+                    <p class="banner-subtitle">
+                        I
+                        <span>aspire</span>
+                        to create digital experiences that are not only
+                        <span>user-friendly</span>
+                        but also
+                        <span>visually captivating</span>.
+                    </p>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-5">
-                    <p class="f-nun" style="font-size: 36px"><strong>Khả năng của mình:</strong></p>
-                    <div style="display: flex; flex-wrap: wrap;">
-                        <p class="f-nun box-1">Ai</p>
-                        <p class="f-nun box-1">Ps</p>
-                        <p class="f-nun box-1">Id</p>
-                        <p class="f-nun box-1">Ae</p>
-                        <p class="f-nun box-1">Dw</p>
-                        <p class="f-nun box-1">Solidworks</p>
-                        <p class="f-nun box-1">Canva</p>
-                        <p class="f-nun box-1">Figma</p>
-                        <p class="f-nun box-1">Xd</p>
-                        <p class="f-nun box-1">UX/UI</p>
-                        <p class="f-nun box-1">HTML</p>
-                        <p class="f-nun box-1">CSS</p>
-                        <p class="f-nun box-1">C</p>
-                    </div>
-                </div>
+                <a href="#about"><button class="large">About me</button></a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="sanpham">
-            <div class="row justify-around" style="padding-top: 150px;">
-				<p class="text-section">SẢN PHẨM</p>
-			</div>
-            <div class="container" style="margin-top: 100px;">
-                <div class="row " >
-                    <div class="col-7 ">
-                        <div class="owl-carousel owl-theme" id="banner">
-                            <div class="item ">
-                                <img src="img/la-dua-1.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/la-dua-2.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/la-dua-3.jpg" class="" alt="">
-                            </div>
+        <section id="about">
+            <div class="container">
+                <div class="section-content">
+                    <p class="section-title">ABOUT ME</p>
+                    <p class="section-subtitle">Welcome! I'm delighted to have you visit my space.</p>
+                </div>
+                <div class="row about-content">
+                    <div class="offset-lg-1"></div>
+                    <div class="col-lg-5 about-me">
+                        <p class="para-title">Get to know me</p>
+                        <div class="para-body">
+                            <p>
+                                I am passionate with the goal of creating impactful designs that contribute to making
+                                the digital world both engaging and effective in the long run.
+                                <br><br>
+                                Furthermore, I possess a strong technical foundation and in-depth knowledge of
+                                electronic devices, processors, and smart technologies.
+                                <br><br>
+                                I am proficient in English, enabling effective communication and persuasive interactions
+                                with colleagues and clients.
+                                <br><br>
+                                I am eager to collaborate and explore new, exciting ideas. If you feel that I could be a
+                                good fit, please don't hesitate to reach out to me. I look forward to hearing from you!
+                            </p>
                         </div>
+                        <a href="#projects"><button class="small">Projects</button></a>
                     </div>
-                    <div class="col-5 ">
-                        <div class="box-a" >
-                            <div class="row justify-center">
-                                <p class="text-sanpham">Lá dứa</p>
+                    <div class="col-lg-5 about-me">
+                        <p class="para-title">My Skills & Tools</p>
+                        <div class="skills-tools">
+                            <div class="skills-content">
+                                <span class="skill-tag">UR/UX/UI</span>
+                                <span class="skill-tag">Prototyping</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">Graphic Design</span>
+                                <span class="skill-tag">Motion Graphic</span>
+                                <span class="skill-tag">Photography</span>
                             </div>
-                            <div class="row">
-                                <p class="text-title-sanpham"> <strong>Thể loại: Photography
-                                        Concept</strong></p>
-    
-                                <div class="row" style="width:100%">
-                                    <p class="text-para-sanpham"><strong>Chủ đề tự dựng:</strong> chụp ảnh cho set đồ uống mới cho một
-                                        cửa hàng cà phê nhượng quyền tên CHEESE thành lập những năm 1980.</p>
-                                </div>
-                                <div class="row " style="width:100%">
-                                    <p class="text-para-sanpham"><strong>Thực hiện</strong></p>
-                                </div>
-                                <div class="row skill">
-                                    <p class="box-3">Brainstorm</p>
-                                    <p class="box-3">Palette</p>
-                                    <p class="box-3">Sketch</p>
-                                    <p class="box-3">Chụp ảnh</p>
-
-                                </div>
+                            <div class="skills-content">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Ai/Ps/Id/Ae</span>
+                                <span class="skill-tag">Capcut</span>
+                                <span class="skill-tag">VSCode</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">Bootstrap</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>     
-            
-            <div class="container" style="margin-top: 100px;">
-                <div class="row ">
-                    <div class="col-8 ">
-                        <div class="box-b">
-                            <div class="row justify-center">
-                                <p class="text-sanpham">Strongbow & Butterfly</p>
-                            </div>
-                            <div class="row" style="width:100%">
-                                <p class="text-title-sanpham"> <strong>Thể loại:
-									Photoshop</strong></p>
-    
-                                <div class="row" style="width:100%">
-                                    <p class="text-para-sanpham"><strong>Chủ đề tự dựng:</strong> thiết kế ảnh làm nổi bật chủ thể bia
-                                        strongbow. Thiết kế ảnh bất kỳ.</p>
-                                </div>
-                                <div class="row" style="width:100%">
-                                    <p class="text-para-sanpham"><strong>Thực hiện</strong></p>
-                                </div>
-                                <div class="row skill">
-                                    <p class="box-3">Manipulate</p>
-                                    <p class="box-3">Composition</p>
-                                    <p class="box-3">Color balance</p>
-                                    <p class="box-3">Ps</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 ">
-                        <div class="owl-carousel owl-theme" id="banner1">
-                            <div class="item ">
-                                <img src="img/ps-1.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/ps-2.jpg" class="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div class="container" style="margin-top: 100px;">
-                <div class="row " >
-                    <div class="col-5 ">
-                        <div class="owl-carousel owl-theme" id="banner2">
-                            <div class="item ">
-                                <img src="img/circle-k-01.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/ministop.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/family-mart.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/7-eleven.jpg" class="" alt="">
-                            </div>
-                            <div class="item ">
-                                <img src="img/gs25.jpg" class="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-7 ">
-                        <div class="box-c" >
-                            <div class="row justify-center">
-                                <p class="text-sanpham">Cửa hàng tiện lợi</p>
-                            </div>
-                            <div class="row">
-                                <p class="text-title-sanpham"> <strong>Thể loại: Illustration</strong></p>
-    
-                                <div class="row" style="width:100%">
-                                    <p class="text-para-sanpham"><strong>Chủ đề tự dựng:</strong> thực hiện thiết kế 5 cửa hàng tiện lợi
-                                        phổ biến ở Sài Gòn. Phong cách đơn giản, màu sắc, vui nhộn.</p>
-                                </div>
-                                <div class="row " style="width:100%">
-                                    <p class="text-para-sanpham"><strong>Thực hiện</strong></p>
-                                </div>
-                                <div class="row skill">
-                                    <p class="box-3">Brainstorm</p>
-                                    <p class="box-3">Ref</p>
-                                    <p class="box-3">Thiết kế</p>
-                                    <p class="box-3">Palette</p>
-                                    <p class="box-3">Ai</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-    </section>
-
-    <section id="lienhe">
-        <div class="container" style="padding-top: 150px;">
-            <div class="row justify-around">
-                <p class="text-section">LIÊN HỆ</p>
             </div>
-            <div class="row">
-				<div class="col-1"></div>
-				<div class="col-10">
-					<p class="f-jose justify-left" style="font-size: 24px "> <strong>Chủ đề:</strong></p>
-					<textarea name="" id="" class="box-text" placeholder="Bạn muốn liên hệ đến mình vì?"></textarea>
-					<p class="f-jose justify-left" style="font-size: 24px "> <strong>Nội dung chi tiết:</strong></p>
-					<textarea name="" id="" class="box-text" style="height: 400px"
-						placeholder="Chi tiết nội dung tại đây..."></textarea>
-					<p class="f-nun" style="font-size: 30px; line-height: 4rem"><a href="#lienhe"
-							class="btn">Submit</a></p>
-				</div>
-			</div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-10 bor-t"></div>
+        </section>
 
-			</div>
-			<div class="row ">
-				<div class="col-1"></div>
-				<div class="col-5">
-					<p class="text-foot-tittle">
-						<strong>Memoies</strong>
-					</p>
-				</div>
-				<div class="col-5">
-					<p class="text-foot-tittle">
-						<strong>Design</strong>
-					</p>
+        <section id="projects">
+            <div class="container">
+                <div class="section-content">
+                    <p class="section-title">PROJECTS</p>
+                </div>
+            </div>
+        </section>
 
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<p class="text-foot-para">Mình
-						là một Graphic Designer nhiệt huyết với mục tiêu tạo ra những thiết kế có ảnh hưởng lâu dài.</p>
-				</div>
-				<div class="col-1"></div>
-				<div class="col-4">
-					<p class="text-foot-para">Website được truyền cảm
-						hứng bởi <a href="https://catalinonutu.com/" style="text-decoration: none" target="_blank"><span
-								class="highlight">Cătălin Onuțu</span></a> </p>
-				</div>
-				<div class="col-1">
-					<div class="text-right">
-						<a href="https://www.facebook.com/phuongthanh.pham.169" target="_blank">
-							<img src="img/face.png" alt="">
-						</a>
-						<a href="https://www.instagram.com/thanh.memoies/" target="_blank">
-							<img src="img/insta.png" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-    </footer>
-    <script src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+        <section id="contact">
+            <div class="container">
+                <div class="section-content">
+                    <p class="section-title">CONTACT</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-
+    <footer></footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
