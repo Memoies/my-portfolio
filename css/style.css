@@ -129,9 +129,10 @@
     border: 1px solid red !important;
 }
 
-.container {
-    max-width: 100%;
-}
+/* .container {
+    max-width: 90%;
+    padding: 0 190px;
+} */
 
 section {
     display: flex;
@@ -443,4 +444,19 @@ main button.small {
     font-family: 'Nunito';
     font-size: var(--skill-box-font-size);
     font-weight: var(--font-bold);
+}
+
+.projects-show-case {
+    display: grid;
+    gap: 20px;
+}
+
+.project-content {
+    border-radius: 16px;
+    border: 3px solid var(--accent-color);
+    padding: 12px 12px;
+}
+
+.project-slide-img {
+    border-radius: 8px;
 }
