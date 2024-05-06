@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     transition: all var(--transition-duration) ease;
 }
 
@@ -200,7 +200,6 @@ main button {
     background-color: var(--primary-color);
     font-family: 'Nunito';
     font-weight: var(--font-extra-bold);
-
 }
 
 main button:hover {
@@ -275,3 +274,18 @@ main button.small {
     padding: var(--skill-tag-small-padding);
     font-size: var(--skill-tag-small-font-size);
 }
+
+.project-content {
+    border: 3px solid var(--accent-color);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.project-head {
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: var(--font-extra-bold);
+    margin: 0;
+}
+
+
