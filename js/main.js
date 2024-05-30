@@ -1,50 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var navbar = document.getElementById("navbar");
-    var homeSection = document.getElementById("home");
+// function updateCirclePositions() {
+//     const scrollPosition = window.scrollY;
 
-    // Function to check if the user has scrolled to the "home" section
-    function checkScroll() {
-        var scrollPosition = window.scrollY;
-        var homeSectionTop = homeSection.offsetTop;
-        var homeSectionHeight = homeSection.offsetHeight;
-        if (scrollPosition >= homeSectionTop && scrollPosition <= (homeSectionTop + homeSectionHeight / 2)) {
-            navbar.classList.add("hide-navbar"); // Add class to hide navbar
-        } else {
-            navbar.classList.remove("hide-navbar"); // Remove class to show navbar
-        }
-    }
+//     // Calculate the translation values based on the scroll position
+//     const translateX1 = -scrollPosition * 0.1 + 'px';
+//     const translateY1 = -scrollPosition * 0.05 + 'px';
+//     const translateX2 = scrollPosition * 0.05 + 'px';
+//     const translateY2 = scrollPosition * 0.1 + 'px';
+//     const translateX3 = -scrollPosition * 0.05 + 'px';
+//     const translateY3 = scrollPosition * 0.1 + 'px';
+//     const translateX4 = scrollPosition * 0.1 + 'px';
+//     const translateY4 = -scrollPosition * 0.05 + 'px';
 
-    // Check scroll position on page load and scroll events
-    checkScroll();
-    window.addEventListener("scroll", checkScroll);
-});
+//     // Apply the translation to the circle elements
+//     document.querySelector('.grad-circle.c1').style.transform = `translate(${translateX1}, ${translateY1}) rotate(70deg)`;
+//     document.querySelector('.grad-circle.c2').style.transform = `translate(${translateX2}, ${translateY2}) rotate(135deg)`;
+//     document.querySelector('.grad-circle.c3').style.transform = `translate(${translateX3}, ${translateY3}) rotate(-15deg)`;
+//     document.querySelector('.grad-circle.c4').style.transform = `translate(${translateX4}, ${translateY4}) rotate(-145deg)`;
+// }
 
-document.addEventListener("DOMContentLoaded", function () {
-    var navbarToggler = document.querySelector(".navbar-toggler");
-    var navbarNav = document.querySelector(".navbar-nav");
-
-    // Function to check if the navbar toggler button is visible
-    function isNavbarTogglerVisible() {
-        return window.getComputedStyle(navbarToggler).display !== "none";
-    }
-
-    // Close navbar when a link is clicked
-    navbarNav.addEventListener("click", function (event) {
-        if (event.target.tagName === "A" && isNavbarTogglerVisible()) {
-            navbarToggler.click(); // Simulate a click on the toggler button
-        }
-    });
-
-    // Add 'mobile' class to navbar links if toggler is visible
-    function updateNavbarLinks() {
-        if (isNavbarTogglerVisible()) {
-            navbarNav.classList.add("mobile");
-        } else {
-            navbarNav.classList.remove("mobile");
-        }
-    }
-
-    // Update navbar links on page load and resize
-    updateNavbarLinks();
-    window.addEventListener("resize", updateNavbarLinks);
-});
+// window.addEventListener('scroll', updateCirclePositions);
