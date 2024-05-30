@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    /* colors */
+    --accent-color: #4E9FFF;
+    --primary-color: #2516D4;
+    --background-color: #110F25;
+    --grad-bg-lv1-color: #1F1282;
+    --grad-bg-lv2-color: #110953;
+    --grad-bg-lv3-color: var(--background-color);
+    --skill-tag-color: #1C327F;
+    --theme-text-default-color: white;
+
+    /* font weight */
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+
+    /* standard font size */
+    --h1-font-size: 72px;
+    --h2-font-size: 64px;
+    --h3-font-size: 56px;
+    --h4-font-size: 48px;
+    --h5-font-size: 40px;
+    --h6-font-size: 32px;
+    --title-font-size: 24px;
+    --subtitle-font-size: 20px;
+    --body-font-size: 16px;
+    --note-font-size: 12px;
+
+    /* font size */
+    --author-font-size: var(--title-font-size);
+    --nav-link-font-size: var(--title-font-size);
+    --banner-title-font-size: var(--h2-font-size);
+    --banner-subtitle-font-size: var(--h6-font-size);
+    --section-title-font-size: var(--h5-font-size);
+    --section-subtitle-font-size: var(--title-font-size);
+    --para-title-font-size: var(--title-font-size);
+    --para-body-font-size: var(--body-font-size);
+    --skill-box-font-size: var(--body-font-size);
+
+    /* transition */
+    --transition-duration: .3s;
+    --grad-circle-transition-duration: 1s;
+
+    /* gradient circle */
+    --rad-grad-pos: -60%;
+    --rad-grad-scale: 150%;
+    --rad-grad-scale-xy: var(--rad-grad-scale) var(--rad-grad-scale);
+    --grad-circle-1-size: calc(20vw + 10vh + 200px);
+    --grad-circle-2-size: calc(10vw + 5vh + 100px);
+    --grad-circle-3-size: calc(6vw + 3vh + 60px);
+    --grad-circle-4-size: calc(14vw + 7vh + 150px);
+
+    /* avatar */
+    --avatar-size: 80px;
+
+    /* button */
+    --button-border-radius: 4px;
+    --button-large-padding: 16px 24px;
+    --button-large-font-size: 24px;
+    --button-small-padding: 8px 16px;
+    --button-small-font-size: 16px;
+}
+
+* {
+    /* border: 1px solid red !important; */
+    scroll-behavior: smooth;
+    transition: all var(--transition-duration) ease;
+    z-index: 1;
+    color: var(--theme-text-default-color);
+}
+
+/* Customize carousel style */
+.carousel-indicators {
+    list-style: none;
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: var(--accent-color) !important;
+}
+
+.carousel-indicators li:hover {
+    opacity: 0.8 !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../img/prev-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/next-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+section#banner {
+    justify-content: center;
+    background: radial-gradient(50% 50%, var(--grad-bg-lv1-color) 0%, var(--grad-bg-lv2-color) 50%, var(--grad-bg-lv3-color) 100%);
+}
+
+.grad-circle {
+    background: radial-gradient(var(--rad-grad-scale-xy) at var(--rad-grad-pos), #120D41 40%, #2F2687 82.5%, #3B36B5 92.5%, #5F5AE3 100%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    filter: blur(1px);
+    transition: all var(--grad-circle-transition-duration) ease;
+}
+
+.grad-circle.c1 {
+    width: var(--grad-circle-1-size);
+    height: var(--grad-circle-1-size);
+    top: -15vh;
+    left: -5vw;
+    rotate: 70deg;
+}
+
+.grad-circle.c2 {
+    width: var(--grad-circle-2-size);
+    height: var(--grad-circle-2-size);
+    top: 10vh;
+    right: 5vw;
+    rotate: 135deg;
+}
+
+.grad-circle.c3 {
+    width: var(--grad-circle-3-size);
+    height: var(--grad-circle-3-size);
+    bottom: 20vh;
+    left: 10vw;
+    rotate: -15deg;
+}
+
+.grad-circle.c4 {
+    width: var(--grad-circle-4-size);
+    height: var(--grad-circle-4-size);
+    bottom: 5vh;
+    right: 10vw;
+    rotate: -145deg;
+}
+
+.theme-button {
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-family: 'Nunito';
+    font-weight: var(--font-bold);
+
+    /* Default: large button */
+    padding: var(--button-large-padding);
+    font-size: var(--button-large-font-size);
+}
+
+.theme-button.large {
+    padding: var(--button-large-padding);
+    font-size: var(--button-large-font-size);
+}
+
+.theme-button.small {
+    padding: var(--button-small-padding);
+    font-size: var(--button-small-font-size);
+}
+
+.banner-content {
+    padding: 60px 32px 120px 32px;
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 74px 80px 0px rgba(118, 132, 234, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.banner-title {
+    font-family: 'Nunito';
+    font-size: var(--banner-title-font-size);
+    font-weight: var(--font-extra-bold);
+    line-height: 110%;
+    text-align: center;
+}
+
+.banner-subtitle {
+    font-family: 'Josefin Sans';
+    font-size: var(--banner-subtitle-font-size);
+    font-weight: var(--font-regular);
+    line-height: 120%;
+    text-align: center;
+    max-width: 816px;
+}
+
+.banner-subtitle span {
+    color: var(--accent-color);
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 160px;
+    margin-bottom: 80px;
+    gap: 28px;
+}
+
+.section-title {
+    font-family: 'Nunito';
+    font-size: var(--section-title-font-size);
+    font-weight: var(--font-bold);
+    line-height: 120%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    bottom: -20px;
+    left: 50%;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-size: var(--section-subtitle-font-size);
+    font-weight: var(--font-regular);
+    line-height: 120%;
+}
+
+.para-title {
+    font-family: 'Nunito';
+    font-size: var(--para-title-font-size);
+    font-weight: var(--font-bold);
+}
+
+.para-body {
+    font-family: 'Josefin Sans';
+    font-size: var(--para-body-font-size);
+    font-weight: var(--font-regular);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 36px;
+}
+
+.skills-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skills-content .skill-tag {
+    background-color: var(--skill-tag-color);
+    color: var(--body-color);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-family: 'Nunito';
+    font-size: var(--skill-box-font-size);
+    font-weight: var(--font-bold);
+}
+
+.projects-show-case {
+    display: grid;
+    gap: 80px;
+}
+
+.project-content {
+    border-radius: 16px;
+    border: 3px solid var(--accent-color);
+    padding: 12px;
+}
+
+.project-slide-img {
+    border-radius: 8px;
+}

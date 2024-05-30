@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,11 +18,15 @@
         <!-- place navbar here -->
     </header>
     <main>
+        <div class="grad-circle c1"></div>
+        <div class="grad-circle c2"></div>
+        <div class="grad-circle c3"></div>
+        <div class="grad-circle c4"></div>
 
-        <section id="home">
+        <section id="banner">
             <div class="banner-content">
                 <div class="banner-text">
-                    <p class="banner-title">Hello, I am Memoies!</p>
+                    <p class="banner-title">Hello, I am Emory!</p>
                     <p class="banner-subtitle">
                         I
                         <span>aspire</span>
@@ -32,98 +36,81 @@
                         <span>visually captivating</span>.
                     </p>
                 </div>
-                <a href="#about"><button class="large">About me</button></a>
+                <a href="#about"><button class="theme-button large">About me</button></a>
             </div>
         </section>
-
         <section id="about">
-            <div class="section-text">
-                <p class="section-title">
-                    About me
-                </p>
-                <p class="section-subtitle">
-                    Welcome! I'm delighted to have you visit my space.
-                </p>
+            <div class="section-content">
+                <p class="section-title">ABOUT ME</p>
+                <p class="section-subtitle">Welcome! I'm delighted to have you visit my space.</p>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="offset-1 col-5">
-                        <div class="about-me">
-                            <p class="para-title">Get to know me</p>
-                            <p class="para-body">
-                                I am passionate with the goal of creating impactful designs that contribute to
-                                making the digital world both engaging and effective in the long run.
-                                <br><br>
-                                Furthermore, I possess a strong technical foundation and in-depth knowledge of
-                                electronic devices, processors, and smart technologies.
-                                <br><br>
-                                I am proficient in English, enabling effective communication and persuasive
-                                interactions with colleagues and clients.
-                                <br><br>
-                                I am eager to collaborate and explore new, exciting ideas. If you feel that I could
-                                be a good fit, please don't hesitate to reach out to me. I look forward to hearing
-                                from you!
-                            </p>
-                            <a href="#projects"><button class="small">Projects</button></a>
-                        </div>
+                    <div class="offset-lg-1 col-lg-5 about-me">
+                        <p class="para-title">Get to know me</p>
+                        <p class="para-body">
+                            I am passionate with the goal of creating impactful designs that contribute to making the
+                            digital world both engaging and effective in the long run.
+                            <br><br>
+                            Furthermore, I possess a strong technical foundation and in-depth knowledge of electronic
+                            devices, processors, and smart technologies.
+                            <br><br>
+                            I am proficient in English, enabling effective communication and persuasive interactions
+                            with colleagues and clients.
+                            <br><br>
+                            I am eager to collaborate and explore new, exciting ideas. If you feel that I could be a
+                            good fit, please don't hesitate to reach out to me. I look forward to hearing from you!
+                        </p>
+                        <a href="#projects"><button class="theme-button small">Projects</button></a>
                     </div>
-                    <div class="col-5 ">
-                        <div class="skills-content">
-                            <p class="para-title">
-                                My Skills & Tools
-                            </p>
-                            <div class="skills-n-tools">
-                                <div class="skills">
-                                    <div class="skill-tag large">UR/UX/UI</div>
-                                    <div class="skill-tag large">Prototyping</div>
-                                    <div class="skill-tag large">Responsive Design</div>
-                                    <div class="skill-tag large">Graphic Design</div>
-                                    <div class="skill-tag large">Motion Graphic</div>
-                                </div>
-                                <div class="skills">
-                                    <div class="skill-tag large">Figma</div>
-                                    <div class="skill-tag large">Ai/Ps/Id/Ae</div>
-                                    <div class="skill-tag large">Capcut</div>
-                                    <div class="skill-tag large">VSCode</div>
-                                    <div class="skill-tag large">HTML/CSS</div>
-                                    <div class="skill-tag large">Bootstrap</div>
-                                </div>
+                    <div class="col-lg-5 about-me">
+                        <p class="para-title">My Skills & Tools</p>
+                        <div class="skills-tools">
+                            <div class="skills-content">
+                                <span class="skill-tag">User Research</span>
+                                <span class="skill-tag">UX/UI</span>
+                                <span class="skill-tag">Prototyping</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">Graphic Design</span>
+                                <span class="skill-tag">Motion Graphic</span>
+                                <span class="skill-tag">Photography</span>
                             </div>
-
+                            <div class="skills-content">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Ai/Ps/Id/Ae</span>
+                                <span class="skill-tag">Capcut</span>
+                                <span class="skill-tag">VSCode</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">Bootstrap</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="projects">
-            <div class="section-text">
-                <p class="section-title">
-                    Projects
-                </p>
+            <div class="section-content">
+                <p class="section-title">PROJECTS</p>
             </div>
-            <div class="container projects">
+            <div class="container projects-show-case">
                 <div class="row project-content">
-                    <div class="col-7">
+                    <div class="col-lg-7 p-0">
                         <div id="greeny" class="carousel slide" data-bs-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-bs-target="#greeny" data-bs-slide-to="0" class="active" aria-current="true"
-                                    aria-label="First slide"></li>
-                                <li data-bs-target="#greeny" data-bs-slide-to="1" aria-label="Second slide"></li>
-                                <li data-bs-target="#greeny" data-bs-slide-to="2" aria-label="Third slide"></li>
+                                <li data-bs-target="#greeny" data-bs-slide-to="0" class="active" aria-current="true">
+                                </li>
+                                <li data-bs-target="#greeny" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#greeny" data-bs-slide-to="2"></li>
                             </ol>
-                            <div class="carousel-inner" role="listbox">
+                            <div class="carousel-inner project-slide-img" role="listbox">
                                 <div class="carousel-item active">
-                                    <img src="img/greeny/greeny1.jpg" class="w-100 d-block"
-                                        alt="First slide" />
+                                    <img src="img/greeny/greeny-1.jpg" class="w-100 d-block" alt="" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/greeny/greeny2.jpg" class="w-100 d-block"
-                                        alt="Second slide" />
+                                    <img src="img/greeny/greeny-2.jpg" class="w-100 d-block" alt="" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/greeny/greeny3.jpg" class="w-100 d-block"
-                                        alt="Third slide" />
+                                    <img src="img/greeny/greeny-3.jpg" class="w-100 d-block" alt="" />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#greeny"
@@ -137,39 +124,119 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
-
                     </div>
-                    <div class="col-5">
-                        <div class="project-description">
-                            <div class="project-head">
-                                Garden Management App
+                    <div class="col-lg-5">greeny</div>
+                </div>
+                <div class="row project-content">
+                    <div class="col-lg-7 order-lg-1 p-0">
+                        <div id="vungtau" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#vungtau" data-bs-slide-to="0" class="active" aria-current="true">
+                                </li>
+                                <li data-bs-target="#vungtau" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#vungtau" data-bs-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner project-slide-img" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/vungtau/vungtau-1.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/vungtau/vungtau-2.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/vungtau/vungtau-3.jpg" class="w-100 d-block" alt="" />
+                                </div>
                             </div>
-                            <div class="project-body">
-
-                            </div>
-                            <a href="#about"><button class="small">A
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15 3.98853H19C19.5304 3.98853 20.0391 4.19924 20.4142 4.57431C20.7893 4.94938 21 5.45809 21 5.98853V19.9885C21 20.519 20.7893 21.0277 20.4142 21.4027C20.0391 21.7778 19.5304 21.9885 19 21.9885H15"
-                                            stroke="#F6F6F6" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M10 17.9885L15 12.9885L10 7.98853" stroke="#F6F6F6" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M15 12.9885H3" stroke="#F6F6F6" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button></a>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#vungtau"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#vungtau"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
+                    <div class="col-lg-5">vungtau</div>
                 </div>
-
+                <div class="row project-content">
+                    <div class="col-lg-7 p-0">
+                        <div id="convstores" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#convstores" data-bs-slide-to="0" class="active"
+                                    aria-current="true"></li>
+                                <li data-bs-target="#convstores" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#convstores" data-bs-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner project-slide-img" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/convstores/convstores-1.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/convstores/convstores-2.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/convstores/convstores-3.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#convstores"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#convstores"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">convstores</div>
+                </div>
+                <div class="row project-content">
+                    <div class="col-lg-7 order-lg-1 p-0">
+                        <div id="drinkset" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#drinkset" data-bs-slide-to="0" class="active"
+                                    aria-current="true"></li>
+                                <li data-bs-target="#drinkset" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#drinkset" data-bs-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner project-slide-img" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/drinkset/drinkset-1.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/drinkset/drinkset-2.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/drinkset/drinkset-3.jpg" class="w-100 d-block" alt="" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#drinkset"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#drinkset"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">drinkset</div>
+                </div>
             </div>
-
+        </section>
+        <section id="contact">
+            <div class="section-content">
+                <p class="section-title">CONTACT</p>
+            </div>
         </section>
     </main>
-
     <footer>
         <!-- place footer here -->
     </footer>
@@ -181,6 +248,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
