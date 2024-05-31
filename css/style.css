@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -324,6 +325,7 @@ section#banner {
     border-radius: 16px;
     border: 3px solid var(--accent-color);
     padding: 12px;
+    align-items: center;
 }
 
 .project-slide-img {
@@ -334,8 +336,6 @@ section#banner {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -377,4 +377,128 @@ section#banner {
     padding: 8px 12px;
     border-radius: 4px;
     background: #241D72;
+}
+
+.email-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.email-text-box {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 3px solid var(--accent-color);
+    background: none;
+    font-family: 'Nunito';
+    font-size: var(--body-font-size);
+    font-weight: var(--font-regular);
+    line-height: normal;
+}
+
+.email-text-box.body {
+    resize: none;
+}
+
+.email-text-box::placeholder {
+    color: var(--theme-text-default-color);
+    opacity: 0.6;
+}
+
+.email-text-box:focus,
+.email-text-box:focus-visible {
+    box-shadow: 0 0 5px 1px var(--accent-color);
+    outline: none;
+}
+
+.email-content .send-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.email-info p {
+    padding: 10px;
+    font-family: 'Inconsolata';
+    font-size: 16px;
+    line-height: normal;
+    background: var(--skill-tag-color);
+    border-radius: 4px;
+}
+
+.email-info .email-copy-button {
+    border: none;
+    background: var(--skill-tag-color);
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-info .message {
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--font-regular);
+    line-height: 150%;
+}
+
+.contact-info .follow-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-info .follow-me .text {
+    font-family: 'Nunito';
+    font-size: var(--h6-font-size);
+    font-weight: var(--font-bold);
+    line-height: 150%;
+}
+
+.contact-info .follow-me .profile {
+    display: flex;
+    gap: 60px;
+}
+
+.copy-pop-up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(90, 90, 90, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.show {
+    display: block;
+    animation: pop-up-animation 1.5s ease forwards;
+}
+
+@keyframes pop-up-animation {
+    0% { transform: translate(-50%, 0); opacity: 0; }
+    10% { opacity: 0.25; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    90% { opacity: 0.25; }
+    100% { transform: translate(-50%, -20px); opacity: 0; }
 }
