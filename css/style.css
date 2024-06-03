@@ -6,12 +6,12 @@
     /* colors */
     --accent-color: #4E9FFF;
     --primary-color: #2516D4;
-    --selected-color: #0B0085;
+    --secondary-color: #3755C0;
+    --hover-color: #0B0085;
     --background-color: #110F25;
     --grad-bg-lv1-color: #1F1282;
     --grad-bg-lv2-color: #110953;
     --grad-bg-lv3-color: var(--background-color);
-    --skill-tag-color: #1C327F;
     --theme-text-default-color: white;
 
     /* font weight */
@@ -45,7 +45,7 @@
     --section-subtitle-font-size: var(--title-font-size);
     --para-title-font-size: var(--title-font-size);
     --para-body-font-size: var(--body-font-size);
-    --skill-box-font-size: var(--body-font-size);
+    --skill-tag-font-size: var(--body-font-size);
 
     /* transition */
     --transition-duration: .3s;
@@ -59,6 +59,10 @@
     --grad-circle-2-size: calc(10vw + 5vh + 100px);
     --grad-circle-3-size: calc(6vw + 3vh + 60px);
     --grad-circle-4-size: calc(14vw + 7vh + 150px);
+
+    /* theme switcher */
+    --theme-switcher-default-color: #3755C0;
+    --theme-switcher-active-color: var(--accent-color);
 
     /* avatar */
     --avatar-size: 80px;
@@ -109,6 +113,54 @@
     background-repeat: no-repeat;
 }
 
+.navbar-brand {
+    gap: 24px;
+}
+
+.navbar-dark {
+    background-color: var(--background-color) !important;
+    box-shadow: 0px 8px 40px 0px rgba(37, 22, 212, 0.25);
+}
+
+.navbar-nav {
+    gap: 28px;
+}
+
+.navbar-nav .nav-link,
+.navbar-author {
+    font-family: 'Nunito';
+    font-size: var(--nav-link-font-size);
+    font-weight: var(--font-extra-bold);
+    color: var(--accent-color) !important;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover .navbar-author {
+    color: var(--theme-text-default-color) !important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 50%;
+}
+
+.navbar-brand:hover .avatar {
+    filter: drop-shadow(0px 0px 8px rgba(78, 159, 255, 0.95));
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -122,9 +174,18 @@ section {
     background-color: var(--background-color);
 }
 
-section#banner {
+section#home {
     justify-content: center;
     background: radial-gradient(50% 50%, var(--grad-bg-lv1-color) 0%, var(--grad-bg-lv2-color) 50%, var(--grad-bg-lv3-color) 100%);
+}
+
+.avatar {
+    background-image: url("../img/avatar.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    width: var(--avatar-size);
+    height: var(--avatar-size);
 }
 
 .grad-circle {
@@ -182,7 +243,7 @@ section#banner {
 }
 
 .theme-button:hover {
-    background-color: var(--selected-color);
+    background-color: var(--hover-color);
 }
 
 .theme-button.large {
@@ -193,6 +254,27 @@ section#banner {
 .theme-button.small {
     padding: var(--button-small-padding);
     font-size: var(--button-small-font-size);
+}
+
+.theme-button:hover.check-it svg {
+    animation: shake 2s ease;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(2.5px);
+    }
 }
 
 .banner-content {
@@ -309,9 +391,9 @@ section#banner {
 
 .skills-content .skill-tag {
     font-family: 'Nunito';
-    font-size: var(--skill-box-font-size);
+    font-size: var(--skill-tag-font-size);
     font-weight: var(--font-bold);
-    background-color: var(--skill-tag-color);
+    background-color: var(--secondary-color);
     border-radius: 4px;
     padding: 12px 16px;
 }
@@ -432,13 +514,13 @@ section#banner {
     font-family: 'Inconsolata';
     font-size: 16px;
     line-height: normal;
-    background: var(--skill-tag-color);
+    background: var(--secondary-color);
     border-radius: 4px;
 }
 
 .email-info .email-copy-button {
     border: none;
-    background: var(--skill-tag-color);
+    background: var(--secondary-color);
     border-radius: 4px;
     padding: 3px;
 }
@@ -458,23 +540,49 @@ section#banner {
     line-height: 150%;
 }
 
-.contact-info .follow-me {
+.contact-info .social {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
 
-.contact-info .follow-me .text {
+.contact-info .social .text {
     font-family: 'Nunito';
     font-size: var(--h6-font-size);
     font-weight: var(--font-bold);
     line-height: 150%;
 }
 
-.contact-info .follow-me .profile {
+.contact-info .social .icon {
     display: flex;
     gap: 60px;
+}
+
+.contact-info .social .icon svg path {
+    fill: var(--accent-color);
+}
+
+.contact-info .social .icon svg:hover {
+    transform-origin: center;
+    animation: rotate-shake 0.5s ease;
+}
+
+@keyframes rotate-shake {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25%,
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
 }
 
 .copy-pop-up {
@@ -495,10 +603,25 @@ section#banner {
 }
 
 @keyframes pop-up-animation {
-    0% { transform: translate(-50%, 0); opacity: 0; }
-    10% { opacity: 0.25; }
-    25% { opacity: 1; }
-    75% { opacity: 1; }
-    90% { opacity: 0.25; }
-    100% { transform: translate(-50%, -20px); opacity: 0; }
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 0.25;
+    }
+
+    25%,
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -20px);
+        opacity: 0;
+    }
 }
+
+.credit-footer {}
