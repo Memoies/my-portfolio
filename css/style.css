@@ -46,6 +46,8 @@
     --para-title-font-size: var(--title-font-size);
     --para-body-font-size: var(--body-font-size);
     --skill-tag-font-size: var(--body-font-size);
+    --footer-title-font-size: var(--h6-font-size);
+    --footer-subtitle-font-size: var(--subtitle-font-size);
 
     /* transition */
     --transition-duration: .3s;
@@ -624,4 +626,45 @@ section#home {
     }
 }
 
-.credit-footer {}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0px 60px 0px;
+    margin-top: auto;
+}
+
+.footer-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--theme-text-default-color);
+    border-radius: 4px;
+}
+
+.footer-content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-content .info .title {
+    font-family: 'Nunito';
+    font-size: var(--footer-title-font-size);
+    font-weight: var(--font-bold);
+    line-height: normal;
+}
+
+.footer-content .info .subtitle {
+    font-family: 'Nunito';
+    font-size: var(--footer-subtitle-font-size);
+    font-weight: var(--font-semi-bold);
+    line-height: normal;
+}
+
+.footer-content .info .subtitle a {
+    text-decoration: none;
+    color: var(--accent-color);
+}

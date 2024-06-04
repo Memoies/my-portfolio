@@ -1,4 +1,5 @@
 const recipientEmail = 'thanh.pham.work3112@gmail.com';
+document.getElementById('email').innerText = recipientEmail;
 
 document.getElementById('send-email').addEventListener('click', function (event) {
     event.preventDefault();
