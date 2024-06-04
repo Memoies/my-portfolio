@@ -1,3 +1,10 @@
+document.getElementById("theme-switcher").addEventListener('click', function () {
+    const currentTheme = document.documentElement.getAttribute("theme-color");
+    console.log(currentTheme);
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("theme-color", newTheme);
+});
+
 const recipientEmail = 'thanh.pham.work3112@gmail.com';
 document.getElementById('email').innerText = recipientEmail;
 

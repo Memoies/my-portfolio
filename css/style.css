@@ -2,18 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-:root {
-    /* colors */
+:root[theme-color="light"] {
+    --accent-color: #2516D4;
+    --primary-color: #7366FF;
+    --secondary-color: #E6E6E6;
+    --hover-color: #0B0085;
+    --background-color: #F6F6F6;
+    --grad-circle-lv1-color: #D5CFF5;
+    --grad-circle-lv2-color: #B3AFEA;
+    --grad-circle-lv3-color: #8388E4;
+    --grad-circle-lv4-color: #6D70DF;
+    --grad-bg-lv1-color: var(--background-color);
+    --grad-bg-lv2-color: var(--background-color);
+    --grad-bg-lv3-color: var(--background-color);
+    --theme-text-default-color: black;
+
+    /* theme switcher */
+    --theme-switcher-default-color: #666666;
+}
+
+:root[theme-color="dark"] {
     --accent-color: #4E9FFF;
     --primary-color: #2516D4;
     --secondary-color: #3755C0;
     --hover-color: #0B0085;
     --background-color: #110F25;
+    --grad-circle-lv1-color: #13112F;
+    --grad-circle-lv2-color: #2F2687;
+    --grad-circle-lv3-color: #3B36B5;
+    --grad-circle-lv4-color: #5F5AE3;
     --grad-bg-lv1-color: #1F1282;
     --grad-bg-lv2-color: #110953;
     --grad-bg-lv3-color: var(--background-color);
-    --theme-text-default-color: white;
+    --theme-text-default-color: #FFFFFF;
 
+    /* theme switcher */
+    --theme-switcher-default-color: #3755C0;
+}
+
+:root {
     /* font weight */
     --font-extra-light: 200;
     --font-light: 300;
@@ -63,7 +90,6 @@
     --grad-circle-4-size: calc(14vw + 7vh + 150px);
 
     /* theme switcher */
-    --theme-switcher-default-color: #3755C0;
     --theme-switcher-active-color: var(--accent-color);
 
     /* avatar */
@@ -163,6 +189,34 @@
     filter: drop-shadow(0px 0px 8px rgba(78, 159, 255, 0.95));
 }
 
+.theme-switcher {
+    display: flex;
+    padding: 12px 20px;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--theme-switcher-default-color);
+    background-color: var(--background-color);
+    border-radius: 40px;
+    margin-left: 48px;
+}
+
+.theme-switcher:hover {
+    box-shadow: 0px 0px 8px 0px var(--accent-color);
+}
+
+.theme-switcher .dark-theme-icon path,
+.theme-switcher .light-theme-icon path {
+    stroke: var(--theme-switcher-default-color);
+    fill: none;
+}
+
+.theme-switcher .dark-theme-icon.active path,
+.theme-switcher .light-theme-icon.active path {
+    stroke: var(--accent-color);
+    fill: var(--accent-color);
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -191,7 +245,7 @@ section#home {
 }
 
 .grad-circle {
-    background: radial-gradient(var(--rad-grad-scale-xy) at var(--rad-grad-pos), #120D41 40%, #2F2687 82.5%, #3B36B5 92.5%, #5F5AE3 100%);
+    background: radial-gradient(var(--rad-grad-scale-xy) at var(--rad-grad-pos), var(--grad-circle-lv1-color) 40%, var(--grad-circle-lv2-color) 82.5%, var(--grad-circle-lv3-color) 92.5%, var(--grad-circle-lv4-color) 100%);
     border-radius: 50%;
     position: absolute;
     z-index: 0;
@@ -237,7 +291,7 @@ section#home {
     border-radius: 4px;
     font-family: 'Nunito';
     font-weight: var(--font-bold);
-    cursor: pointer;
+    color: white;
 
     /* Default: large button */
     padding: var(--button-large-padding);
