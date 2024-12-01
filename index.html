@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" theme-color="dark">
 
 <head>
-    <title>Title</title>
+    <title>Emory Portfolio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,58 @@
 
 <body>
     <header>
-        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home">
+                    <div class="avatar"></div>
+                    <span class="navbar-author">EMORY</span>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-switcher" id="theme-switcher">
+                    <svg class="dark-theme-icon active" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 32 32" fill="none">
+                        <path
+                            d="M28.0001 17.0533C27.7904 19.3229 26.9386 21.4859 25.5444 23.2891C24.1503 25.0922 22.2714 26.4611 20.1277 27.2354C17.984 28.0097 15.6641 28.1575 13.4394 27.6615C11.2148 27.1654 9.17744 26.0461 7.56575 24.4344C5.95405 22.8227 4.8347 20.7853 4.33866 18.5607C3.84261 16.336 3.9904 14.0161 4.76473 11.8724C5.53905 9.72868 6.90789 7.84982 8.71106 6.45567C10.5142 5.06152 12.6772 4.20974 14.9468 4C13.618 5.79769 12.9786 8.0126 13.1448 10.2419C13.3111 12.4712 14.2719 14.5667 15.8526 16.1475C17.4334 17.7282 19.5289 18.689 21.7582 18.8553C23.9875 19.0215 26.2024 18.3821 28.0001 17.0533Z"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="light-theme-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 32 32" fill="none">
+                        <path
+                            d="M16 22.6667C19.6819 22.6667 22.6667 19.6819 22.6667 16C22.6667 12.3181 19.6819 9.33334 16 9.33334C12.3181 9.33334 9.33337 12.3181 9.33337 16C9.33337 19.6819 12.3181 22.6667 16 22.6667Z"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 1.33334V4.00001" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 28V30.6667" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.62671 5.62668L7.52004 7.52001" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M24.48 24.48L26.3733 26.3733" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.33337 16H4.00004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M28 16H30.6667" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.62671 26.3733L7.52004 24.48" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M24.48 7.52001L26.3733 5.62668" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="grad-circle c1"></div>
@@ -23,7 +74,7 @@
         <div class="grad-circle c3"></div>
         <div class="grad-circle c4"></div>
 
-        <section id="banner">
+        <section id="home">
             <div class="banner-content">
                 <div class="banner-text">
                     <p class="banner-title">Hello, I am Emory!</p>
@@ -142,10 +193,19 @@
                                     <span class="tag">Prototype</span>
                                     <span class="tag">Mockups</span>
                                 </div>
-                                <a href="">
-                                    <button class="theme-button small">
+                                <a href="https://be.net/gallery/196228801/Garden-Management-App-Greeny" target="_blank">
+                                    <button class="theme-button small check-it">
                                         Check it
-                                        <img src="img/check-it.svg" alt="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+                                            viewBox="0 0 25 25">
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M15 3.98853H19C19.5304 3.98853 20.0391 4.19924 20.4142 4.57431C20.7893 4.94938 21 5.45809 21 5.98853V19.9885C21 20.519 20.7893 21.0277 20.4142 21.4027C20.0391 21.7778 19.5304 21.9885 19 21.9885H15" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M10 17.9885L15 12.9885L10 7.98853" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M15 12.9885H3" />
+                                        </svg>
                                     </button>
                                 </a>
                             </div>
@@ -204,10 +264,19 @@
                                     <span class="tag">Mockups</span>
                                     <span class="tag">Printing</span>
                                 </div>
-                                <a href="">
-                                    <button class="theme-button small">
+                                <a href="https://be.net/gallery/183507857/Vung-Tau-Visual-Identity" target="_blank">
+                                    <button class="theme-button small check-it">
                                         Check it
-                                        <img src="img/check-it.svg" alt="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+                                            viewBox="0 0 25 25">
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M15 3.98853H19C19.5304 3.98853 20.0391 4.19924 20.4142 4.57431C20.7893 4.94938 21 5.45809 21 5.98853V19.9885C21 20.519 20.7893 21.0277 20.4142 21.4027C20.0391 21.7778 19.5304 21.9885 19 21.9885H15" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M10 17.9885L15 12.9885L10 7.98853" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M15 12.9885H3" />
+                                        </svg>
                                     </button>
                                 </a>
                             </div>
@@ -265,10 +334,19 @@
                                     <span class="tag">Color Harmony</span>
                                     <span class="tag">Composition</span>
                                 </div>
-                                <a href="">
-                                    <button class="theme-button small">
+                                <a href="https://be.net/gallery/196576473/Convenience-Strore" target="_blank">
+                                    <button class="theme-button small check-it">
                                         Check it
-                                        <img src="img/check-it.svg" alt="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+                                            viewBox="0 0 25 25">
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M15 3.98853H19C19.5304 3.98853 20.0391 4.19924 20.4142 4.57431C20.7893 4.94938 21 5.45809 21 5.98853V19.9885C21 20.519 20.7893 21.0277 20.4142 21.4027C20.0391 21.7778 19.5304 21.9885 19 21.9885H15" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M10 17.9885L15 12.9885L10 7.98853" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M15 12.9885H3" />
+                                        </svg>
                                     </button>
                                 </a>
                             </div>
@@ -325,10 +403,19 @@
                                     <span class="tag">Retouch</span>
                                     <span class="tag">Color Adjustment</span>
                                 </div>
-                                <a href="">
-                                    <button class="theme-button small">
+                                <a href="" target="_blank">
+                                    <button class="theme-button small check-it">
                                         Check it
-                                        <img src="img/check-it.svg" alt="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+                                            viewBox="0 0 25 25">
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M15 3.98853H19C19.5304 3.98853 20.0391 4.19924 20.4142 4.57431C20.7893 4.94938 21 5.45809 21 5.98853V19.9885C21 20.519 20.7893 21.0277 20.4142 21.4027C20.0391 21.7778 19.5304 21.9885 19 21.9885H15" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M10 17.9885L15 12.9885L10 7.98853" />
+                                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M15 12.9885H3" />
+                                        </svg>
                                     </button>
                                 </a>
                             </div>
@@ -341,58 +428,48 @@
             <div class="section-content">
                 <p class="section-title">CONTACT</p>
             </div>
-            <div class="container">
+            <div class="container mb-5">
                 <div class="row">
                     <div class="offset-lg-1 col-lg-5 order-lg-1 contact-info">
                         <p class="message">
                             Partnering with me means working with a dedicated and thoughtful designer committed to
                             creating designs that truly resonate with users.
                         </p>
-                        <div class="follow-me">
-                            <p class="text">Follow me on:</p>
-                            <div class="profile">
+                        <div class="social pb-5 pb-lg-0">
+                            <p class="text">Social</p>
+                            <div class="icon">
                                 <!-- Facebook -->
                                 <a href="https://fb.com/phuongthanh.pham.169/" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                         fill="none">
                                         <path
-                                            d="M50 25.0622C50 11.2276 38.8 -0.000488281 25 -0.000488281C11.2 -0.000488281 0 11.2276 0 25.0622C0 37.1925 8.6 47.2927 20 49.6236V32.581H15V25.0622H20V18.7965C20 13.9594 23.925 10.0246 28.75 10.0246H35V17.5434H30C28.625 17.5434 27.5 18.6712 27.5 20.0496V25.0622H35V32.581H27.5V49.9995C40.125 48.7464 50 38.0697 50 25.0622Z"
-                                            fill="#4E9FFF" />
-                                    </svg>
-                                </a>
-                                <!-- Instagram -->
-                                <a href="" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_842_1551)">
-                                            <path
-                                                d="M24.9998 16.666C22.7897 16.666 20.6701 17.544 19.1073 19.1068C17.5445 20.6696 16.6665 22.7892 16.6665 24.9993C16.6665 27.2095 17.5445 29.3291 19.1073 30.8919C20.6701 32.4547 22.7897 33.3327 24.9998 33.3327C27.21 33.3327 29.3296 32.4547 30.8924 30.8919C32.4552 29.3291 33.3332 27.2095 33.3332 24.9993C33.3332 22.7892 32.4552 20.6696 30.8924 19.1068C29.3296 17.544 27.21 16.666 24.9998 16.666Z"
-                                                fill="#4E9FFF" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M15 -0.000488281C11.0218 -0.000488281 7.20644 1.57986 4.3934 4.39291C1.58035 7.20596 0 11.0213 0 14.9995L0 34.9995C0 38.9778 1.58035 42.7931 4.3934 45.6061C7.20644 48.4192 11.0218 49.9995 15 49.9995H35C38.9782 49.9995 42.7936 48.4192 45.6066 45.6061C48.4196 42.7931 50 38.9778 50 34.9995V14.9995C50 11.0213 48.4196 7.20596 45.6066 4.39291C42.7936 1.57986 38.9782 -0.000488281 35 -0.000488281L15 -0.000488281ZM13.3333 24.9995C13.3333 21.9053 14.5625 18.9379 16.7504 16.7499C18.9383 14.562 21.9058 13.3328 25 13.3328C28.0942 13.3328 31.0617 14.562 33.2496 16.7499C35.4375 18.9379 36.6667 21.9053 36.6667 24.9995C36.6667 28.0937 35.4375 31.0612 33.2496 33.2491C31.0617 35.437 28.0942 36.6662 25 36.6662C21.9058 36.6662 18.9383 35.437 16.7504 33.2491C14.5625 31.0612 13.3333 28.0937 13.3333 24.9995ZM36.6667 13.3328H40V9.99951H36.6667V13.3328Z"
-                                                fill="#4E9FFF" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_842_1551">
-                                                <rect width="50" height="50" fill="white" />
-                                            </clipPath>
-                                        </defs>
+                                            d="M50 25.0622C50 11.2276 38.8 -0.000488281 25 -0.000488281C11.2 -0.000488281 0 11.2276 0 25.0622C0 37.1925 8.6 47.2927 20 49.6236V32.581H15V25.0622H20V18.7965C20 13.9594 23.925 10.0246 28.75 10.0246H35V17.5434H30C28.625 17.5434 27.5 18.6712 27.5 20.0496V25.0622H35V32.581H27.5V49.9995C40.125 48.7464 50 38.0697 50 25.0622Z" />
                                     </svg>
                                 </a>
                                 <!-- Behance -->
-                                <a href="" target="_blank">
+                                <a href="https://be.net/mimalbox/" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                         fill="none">
-                                        <g clip-path="url(#clip0_842_1554)">
-                                            <path
-                                                d="M37.5004 23.8462C37.885 24.4231 38.2696 25 38.4619 25.9615H32.3081C32.3081 25.7692 32.3081 25.3846 32.5004 25C32.6927 24.6154 32.6927 24.4231 33.0773 24.0385C33.2696 23.6538 33.6542 23.4615 34.0388 23.2692C34.4234 23.0769 35.0004 22.8846 35.5773 22.8846C36.3465 23.0769 37.1157 23.2692 37.5004 23.8462ZM19.8081 22.5C20.1927 22.1154 20.5773 21.5385 20.5773 20.7692C20.5773 20.3846 20.5773 20 20.385 19.6154C20.1927 19.4231 20.0004 19.0385 19.8081 19.0385C19.6158 18.8462 19.2311 18.8462 18.8465 18.6538H13.8465V23.0769H18.0773C18.6542 23.0769 19.2311 22.8846 19.8081 22.5ZM18.2696 25.7692H13.8465V30.9615H18.2696C18.6542 30.9615 19.0388 30.9615 19.4234 30.7692C19.8081 30.7692 20.1927 30.5769 20.385 30.3846C20.5773 30.1923 20.9619 30 21.1542 29.6154C21.3465 29.2308 21.3465 28.8462 21.3465 28.4615C21.3465 27.5 21.1542 26.7308 20.5773 26.3462C20.0004 25.9615 19.2311 25.7692 18.2696 25.7692ZM50.0004 9.42308V40.5769C50.0004 45.7692 45.7696 50 40.5773 50H9.42344C4.23114 50 0.000366211 45.7692 0.000366211 40.5769V9.42308C0.000366211 4.23077 4.23114 0 9.42344 0H40.5773C45.7696 0 50.0004 4.23077 50.0004 9.42308ZM31.5388 18.4615H39.2311V16.5385H31.5388V18.4615ZM25.385 28.8462C25.385 27.6923 25.1927 26.7308 24.6158 25.7692C24.0388 25 23.2696 24.4231 22.1157 24.0385C22.885 23.6538 23.6542 23.0769 24.0388 22.5C24.4234 21.9231 24.6158 21.1538 24.6158 20.1923C24.6158 19.2308 24.4234 18.6538 24.2311 17.8846C23.8465 17.3077 23.4619 16.7308 23.0773 16.5385C22.5004 16.1538 21.9234 15.9615 21.1542 15.7692C20.1927 15.3846 19.4234 15.3846 18.4619 15.3846H9.61575V34.2308H18.8465C19.6158 34.2308 20.5773 34.0385 21.3465 33.8462C22.1158 33.6538 22.885 33.2692 23.4619 32.8846C24.0388 32.5 24.6157 31.9231 25.0004 31.1538C25.1927 30.5769 25.385 29.8077 25.385 28.8462ZM32.3081 28.2692H42.1157C42.1157 27.1154 42.1157 26.1538 41.9234 25.1923C41.7311 24.2308 41.3465 23.2692 40.7696 22.6923C40.1927 21.9231 39.4234 21.3462 38.6542 20.9615C37.6927 20.5769 36.7311 20.1923 35.5773 20.1923C34.6157 20.1923 33.6542 20.3846 32.6927 20.7692C31.9234 21.1538 31.1542 21.7308 30.385 22.3077C29.8081 22.8846 29.2311 23.6538 29.0388 24.6154C28.6542 25.5769 28.4619 26.5385 28.4619 27.5C28.4619 28.4615 28.6542 29.6154 29.0388 30.3846C29.4234 31.3462 29.8081 32.1154 30.385 32.6923C30.9619 33.2692 31.7311 33.8462 32.5004 34.2308C33.4619 34.6154 34.4234 34.8077 35.385 34.8077C36.9234 34.8077 38.2696 34.4231 39.4234 33.6538C40.5773 32.8846 41.3465 31.7308 41.9234 30.1923H38.6542C38.4619 30.5769 38.2696 30.9615 37.6927 31.3462C37.1157 31.7308 36.5388 31.9231 35.7696 31.9231C34.8081 31.9231 33.8465 31.7308 33.2696 31.1538C32.6927 30.3846 32.3081 29.4231 32.3081 28.2692Z"
-                                                fill="#4E9FFF" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_842_1554">
-                                                <rect width="50" height="50" fill="white" />
-                                            </clipPath>
-                                        </defs>
+                                        <path
+                                            d="M37.5004 23.8462C37.885 24.4231 38.2696 25 38.4619 25.9615H32.3081C32.3081 25.7692 32.3081 25.3846 32.5004 25C32.6927 24.6154 32.6927 24.4231 33.0773 24.0385C33.2696 23.6538 33.6542 23.4615 34.0388 23.2692C34.4234 23.0769 35.0004 22.8846 35.5773 22.8846C36.3465 23.0769 37.1157 23.2692 37.5004 23.8462ZM19.8081 22.5C20.1927 22.1154 20.5773 21.5385 20.5773 20.7692C20.5773 20.3846 20.5773 20 20.385 19.6154C20.1927 19.4231 20.0004 19.0385 19.8081 19.0385C19.6158 18.8462 19.2311 18.8462 18.8465 18.6538H13.8465V23.0769H18.0773C18.6542 23.0769 19.2311 22.8846 19.8081 22.5ZM18.2696 25.7692H13.8465V30.9615H18.2696C18.6542 30.9615 19.0388 30.9615 19.4234 30.7692C19.8081 30.7692 20.1927 30.5769 20.385 30.3846C20.5773 30.1923 20.9619 30 21.1542 29.6154C21.3465 29.2308 21.3465 28.8462 21.3465 28.4615C21.3465 27.5 21.1542 26.7308 20.5773 26.3462C20.0004 25.9615 19.2311 25.7692 18.2696 25.7692ZM50.0004 9.42308V40.5769C50.0004 45.7692 45.7696 50 40.5773 50H9.42344C4.23114 50 0.000366211 45.7692 0.000366211 40.5769V9.42308C0.000366211 4.23077 4.23114 0 9.42344 0H40.5773C45.7696 0 50.0004 4.23077 50.0004 9.42308ZM31.5388 18.4615H39.2311V16.5385H31.5388V18.4615ZM25.385 28.8462C25.385 27.6923 25.1927 26.7308 24.6158 25.7692C24.0388 25 23.2696 24.4231 22.1157 24.0385C22.885 23.6538 23.6542 23.0769 24.0388 22.5C24.4234 21.9231 24.6158 21.1538 24.6158 20.1923C24.6158 19.2308 24.4234 18.6538 24.2311 17.8846C23.8465 17.3077 23.4619 16.7308 23.0773 16.5385C22.5004 16.1538 21.9234 15.9615 21.1542 15.7692C20.1927 15.3846 19.4234 15.3846 18.4619 15.3846H9.61575V34.2308H18.8465C19.6158 34.2308 20.5773 34.0385 21.3465 33.8462C22.1158 33.6538 22.885 33.2692 23.4619 32.8846C24.0388 32.5 24.6157 31.9231 25.0004 31.1538C25.1927 30.5769 25.385 29.8077 25.385 28.8462ZM32.3081 28.2692H42.1157C42.1157 27.1154 42.1157 26.1538 41.9234 25.1923C41.7311 24.2308 41.3465 23.2692 40.7696 22.6923C40.1927 21.9231 39.4234 21.3462 38.6542 20.9615C37.6927 20.5769 36.7311 20.1923 35.5773 20.1923C34.6157 20.1923 33.6542 20.3846 32.6927 20.7692C31.9234 21.1538 31.1542 21.7308 30.385 22.3077C29.8081 22.8846 29.2311 23.6538 29.0388 24.6154C28.6542 25.5769 28.4619 26.5385 28.4619 27.5C28.4619 28.4615 28.6542 29.6154 29.0388 30.3846C29.4234 31.3462 29.8081 32.1154 30.385 32.6923C30.9619 33.2692 31.7311 33.8462 32.5004 34.2308C33.4619 34.6154 34.4234 34.8077 35.385 34.8077C36.9234 34.8077 38.2696 34.4231 39.4234 33.6538C40.5773 32.8846 41.3465 31.7308 41.9234 30.1923H38.6542C38.4619 30.5769 38.2696 30.9615 37.6927 31.3462C37.1157 31.7308 36.5388 31.9231 35.7696 31.9231C34.8081 31.9231 33.8465 31.7308 33.2696 31.1538C32.6927 30.3846 32.3081 29.4231 32.3081 28.2692Z" />
+                                    </svg>
+                                </a>
+                                <!-- Github -->
+                                <a href="https://github.com/emory-box" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 98 98"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
+                                    </svg>
+                                </a>
+                                <!-- Instagram -->
+                                <a href="https://instagram.com/_thanh.emory_/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                                        fill="none">
+                                        <path
+                                            d="M24.9998 16.666C22.7897 16.666 20.6701 17.544 19.1073 19.1068C17.5445 20.6696 16.6665 22.7892 16.6665 24.9993C16.6665 27.2095 17.5445 29.3291 19.1073 30.8919C20.6701 32.4547 22.7897 33.3327 24.9998 33.3327C27.21 33.3327 29.3296 32.4547 30.8924 30.8919C32.4552 29.3291 33.3332 27.2095 33.3332 24.9993C33.3332 22.7892 32.4552 20.6696 30.8924 19.1068C29.3296 17.544 27.21 16.666 24.9998 16.666Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15 -0.000488281C11.0218 -0.000488281 7.20644 1.57986 4.3934 4.39291C1.58035 7.20596 0 11.0213 0 14.9995L0 34.9995C0 38.9778 1.58035 42.7931 4.3934 45.6061C7.20644 48.4192 11.0218 49.9995 15 49.9995H35C38.9782 49.9995 42.7936 48.4192 45.6066 45.6061C48.4196 42.7931 50 38.9778 50 34.9995V14.9995C50 11.0213 48.4196 7.20596 45.6066 4.39291C42.7936 1.57986 38.9782 -0.000488281 35 -0.000488281L15 -0.000488281ZM13.3333 24.9995C13.3333 21.9053 14.5625 18.9379 16.7504 16.7499C18.9383 14.562 21.9058 13.3328 25 13.3328C28.0942 13.3328 31.0617 14.562 33.2496 16.7499C35.4375 18.9379 36.6667 21.9053 36.6667 24.9995C36.6667 28.0937 35.4375 31.0612 33.2496 33.2491C31.0617 35.437 28.0942 36.6662 25 36.6662C21.9058 36.6662 18.9383 35.437 16.7504 33.2491C14.5625 31.0612 13.3333 28.0937 13.3333 24.9995ZM36.6667 13.3328H40V9.99951H36.6667V13.3328Z" />
                                     </svg>
                                 </a>
                             </div>
@@ -417,7 +494,7 @@
                                 </svg>
                             </button>
                             <div class="email-info">
-                                <p>thanh.pham.work3112@gmail.com</p>
+                                <p id="email"></p>
                                 <button class="email-copy-button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                                         fill="none" id="copy-button">
@@ -437,6 +514,23 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="container footer-content">
+                <div class="info">
+                    <p class="title">Emory</p>
+                    <p class="subtitle">Wishing to create lasting impacts.</p>
+                </div>
+                <div class="info">
+                    <p class="title">Design</p>
+                    <p class="subtitle">
+                        Inspired from
+                        <a href="https://catalinonutu.com/" target="_blank">Cătălin Onuțu</a>.
+                    </p>
+                </div>
+                <div class="info">
+                    <p class="title">Code</p>
+                    <p class="subtitle">Coded by Emory &copy; 2024</p>
                 </div>
             </div>
         </section>

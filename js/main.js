@@ -1,4 +1,26 @@
+document.getElementById("theme-switcher").addEventListener('click', function () {
+    const currentTheme = document.documentElement.getAttribute("theme-color");
+    console.log(currentTheme);
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("theme-color", newTheme);
+
+    // Select the SVG icons
+    const darkIcon = document.querySelector(".dark-theme-icon");
+    const lightIcon = document.querySelector(".light-theme-icon");
+
+    // Toggle the active class on icons
+    darkIcon.classList.toggle("active");
+    lightIcon.classList.toggle("active");
+
+    // Re-trigger animations by re-applying the active class
+    const activeIcon = newTheme === "dark" ? darkIcon : lightIcon;
+    activeIcon.classList.remove("active");
+    void activeIcon.offsetWidth; // Trigger a reflow to restart animations
+    activeIcon.classList.add("active");
+});
+
 const recipientEmail = 'thanh.pham.work3112@gmail.com';
+document.getElementById('email').innerText = recipientEmail;
 
 document.getElementById('send-email').addEventListener('click', function (event) {
     event.preventDefault();
