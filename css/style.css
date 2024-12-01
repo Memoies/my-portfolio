@@ -18,6 +18,7 @@
     --theme-text-default-color: black;
     --project-tag-background-color: #E3E6FF;
     --project-tag-font-color: var(--accent-color);
+    --copy-icon-stroke-color: #666666;
 
     /* theme switcher */
     --theme-switcher-default-color: #666666;
@@ -39,6 +40,7 @@
     --theme-text-default-color: white;
     --project-tag-background-color: #241D72;
     --project-tag-font-color: white;
+    --copy-icon-stroke-color: white;
 
     /* theme switcher */
     --theme-switcher-default-color: #3755C0;
@@ -567,6 +569,11 @@ section#home {
     background: var(--secondary-color);
     border-radius: 4px;
     padding: 3px;
+}
+
+.email-info .email-copy-button .copy-icon,
+.email-info .email-copy-button .check-icon {
+    stroke: var(--copy-icon-stroke-color);
 }
 
 .contact-info {
