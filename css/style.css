@@ -633,7 +633,7 @@ section#home {
     border-radius: 4px;
 }
 
-.show {
+.show-pop-up {
     display: block;
     animation: pop-up-animation 1.5s ease forwards;
 }
