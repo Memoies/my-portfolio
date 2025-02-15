@@ -119,7 +119,7 @@
 
 /* Customize carousel style */
 .carousel-indicators {
-    list-style: none;
+    list-style: none !important;
 }
 
 .carousel-indicators li {
@@ -134,15 +134,17 @@
 }
 
 .carousel-control-prev-icon {
-    background-image: url('../img/prev-icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url('../img/prev-icon.svg') !important;
 }
 
 .carousel-control-next-icon {
-    background-image: url('../img/next-icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url('../img/next-icon.svg') !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
 }
 
 .navbar-brand {
