@@ -71,11 +71,11 @@ document.querySelector('.email-copy-button').addEventListener('click', function 
 
     // Show pop-up
     var popUp = document.querySelector('.copy-pop-up');
-    popUp.classList.add('show');
+    popUp.classList.add('show-pop-up');
 
     // Hide pop-up after 1.5 seconds
     setTimeout(function () {
-        popUp.classList.remove('show');
+        popUp.classList.remove('show-pop-up');
     }, 1500);
 });
 
